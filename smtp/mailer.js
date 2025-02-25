@@ -11,7 +11,7 @@ const client = net.createConnection({ host: SMTP_HOST, port: SMTP_PORT }, () => 
   // Envoi des commandes SMTP pour envoyer un e-mail
   client.write('EHLO localhost\r\n');
   client.write('MAIL FROM: <test@example.com>\r\n');
-  client.write('RCPT TO: <djellal.aminepro@gmail.com>\r\n');
+  client.write('RCPT TO: <test@gmail.com>\r\n');
   client.write('DATA\r\n');
   client.write('Subject: Test SMTP\r\n');
   client.write('From: <from@example.com>\r\n');
