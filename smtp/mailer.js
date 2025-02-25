@@ -15,7 +15,7 @@ const client = net.createConnection({ host: SMTP_HOST, port: SMTP_PORT }, () => 
   client.write('DATA\r\n');
   client.write('Subject: Test SMTP\r\n');
   client.write('From: <from@example.com>\r\n');
-  client.write('To: <djellal.aminepro@gmail.com>\r\n');
+  client.write('To: <test@gmail.com>\r\n');
   client.write('\r\n');
   client.write('Ceci est un test SMTP\r\n');
   client.write('.\r\n'); // Marque la fin des données
